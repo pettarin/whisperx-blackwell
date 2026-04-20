@@ -62,6 +62,7 @@ RUN cp -r /usr/local/lib/python3.12/dist-packages/torch /tmp/torch_nvidia && \
 RUN pip install --no-cache-dir \
     whisperx==3.3.1 \
     faster-whisper==1.1.0 \
+    "huggingface-hub<1.0.0" \
     "pyannote.audio==3.3.2" \
     transformers \
     nltk \
